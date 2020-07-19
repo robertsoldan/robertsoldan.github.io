@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robert Soldan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+  <div class="navbar">
+    <div class="navmenu">
+      <span>
+        <a onclick="scrollToBottom()">Contact</a>
+      </span>
+
+      <span>
+        <a href="#portfolio">Portfolio</a>
+      </span>
+
+      <span>
+        <a href="#skills">Skills</a>
+      </span>
+
+      <span>
+        <a href="#about">About</a>
+      </span>
+    </div>
+
+  </div>
+
+  <!-- About -->
+  <div class="section about" id="about">
+    <div class="full-about">
+      <div class="shadow-bar"></div>
+      <div class="about-content grid-container-about">
+        <div class="round-container" onclick="codeBtn()">
+          <p>&lt;&#47;&#62;</p>
+        </div>
+        <div class="name-container">
+          <h2>Robert Soldan</h2>
+        </div>
+      </div>
+      <div class="shadow-bar"></div>
+      <div class="details" id="about-text">
+        <p>Hello, I am a self-taught full stack web developer <br>
+          Currently studying Computing at NCI Dublin <br>
+          I design and build mockups, web pages and backend systems
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-------------------------------------------------------------------------------->
+
+
+  <!-- Skills -->
+  <div class="section skills" id="skills">
+
+    <div class="skills-container">
+      <div></div>
+      <div class="description-container">
+        <div>
+          <p>Self-taught full stack web developer, learned a variety of technologies and frameworks. Studied Java for 2
+            years. Self taught in Python, used it for various automation tasks within my current position. Self taught
+            VBA - used it in MS Access programming and for automation within Excel. Have experience and knowledge with
+            both relational and non-relational database systems, mainly PostgreSQL and MongoDB</p>
+          <ul class="skills-list">
+            <hr>
+            <li>
+              Javascipt / NodeJS: Used Javascript extensively for personal projects. Familiar with JQuery, ReactJS.
+              Enjoy using
+              VueJS combined with Vuetify. For the backend, I am familiar with NodeJS and have used both PostgreSQL and
+              MongoDB for database systems.
+            </li>
+            <hr>
+            <li>
+              HTML / CSS: Using and HTML and CSS since early 2016. Familiar with SASS, prefer using bootstrap or bulma.
+            </li>
+            <hr>
+            <li>
+              VueJS / ReactJS: I started out learning ReactJS and then moved on to using VueJS more because it's a
+              better fit for solo developers and it works great for mockups and prototyping, allowing to build on it
+              later on
+            </li>
+            <hr>
+            <li>
+              Java / Python: Studied Java for two years and OOP concepts. Used Java in two projects, implementing GUI
+              and
+              database connectivity. Used Python in smaller projects to help automate tedious tasks - excel file
+              manipulation, web scraping
+            </li>
+            <hr>
+            <li> Databases: I like the challenge of designing and creating an efficient database system. I studied mySQL
+              and used PostgreSQL for car pool app and channel word cloud.
+            </li>
+            <hr>
+            <li> Linux: Full time Linux user for the past 7 years. Maintaining a Linux home server as a personal cloud
+              implementation, and maintaining a VPS for web hosting, planning to use that as an email server as well.
+              Wrote various bash scripts over the years for fixing / automating tasks.
+            </li>
+            <hr>
+          </ul>
+        </div>
+        <div class="description-bar"></div>
+      </div>
+
+      <div class="card-container" id="card-container">
+        <div class="card-container-grid">
+          <i class="fab fa-js-square fa-2x fa-white"></i>
+          <p>Javascript</p>
+          <div class="bar-grid">
+            <div class="empty-bar"></div>
+            <div class="full-bar" id="full-bar-js"></div>
+          </div>
+
+          <i class="fab fa-node-js fa-2x fa-white"></i>
+          <p>NodeJS</p>
+          <div class="bar-grid">
+            <div class="empty-bar"></div>
+            <div class="full-bar" id="full-bar-node"></div>
+          </div>
+
+          <i class="fab fa-html5 fa-2x fa-white"></i>
+          <p>HTML</p>
+          <div class="bar-grid">
+            <div class="empty-bar"></div>
+            <div class="full-bar" id="full-bar-html"></div>
+          </div>
+
+          <i class="fab fa-css3 fa-2x fa-white"></i>
+          <p>CSS</p>
+          <div class="bar-grid">
+            <div class="empty-bar"></div>
+            <div class="full-bar" id="full-bar-css"></div>
+          </div>
+
+          <i class="fab fa-vuejs fa-2x fa-white"></i>
+          <p>VueJS</p>
+          <div class="bar-grid">
+            <div class="empty-bar"></div>
+            <div class="full-bar" id="full-bar-vue"></div>
+          </div>
+
+          <i class="fab fa-react fa-2x fa-white"></i>
+          <p>ReactJS</p>
+          <div class="bar-grid">
+            <div class="empty-bar"></div>
+            <div class="full-bar" id="full-bar-react"></div>
+          </div>
+
+          <i class="fab fa-java fa-2x fa-white"></i>
+          <p>Java</p>
+          <div class="bar-grid">
+            <div class="empty-bar"></div>
+            <div class="full-bar" id="full-bar-java"></div>
+          </div>
+
+          <i class="fab fa-python fa-2x fa-white"></i>
+          <p>Python</p>
+          <div class="bar-grid">
+            <div class="empty-bar"></div>
+            <div class="full-bar" id="full-bar-python"></div>
+          </div>
+
+          <i class="fa fa-database fa-2x fa-white"></i>
+          <p>PostgreSQL</p>
+          <div class="bar-grid">
+            <div class="empty-bar"></div>
+            <div class="full-bar" id="full-bar-postgres"></div>
+          </div>
+
+          <i class="fa fa-database fa-2x fa-white"></i>
+          <p>MongoDB</p>
+          <div class="bar-grid">
+            <div class="empty-bar"></div>
+            <div class="full-bar" id="full-bar-mongo"></div>
+          </div>
+
+          <i class="fab fa-git fa-2x fa-white"></i>
+          <p>Git</p>
+          <div class="bar-grid">
+            <div class="empty-bar"></div>
+            <div class="full-bar" id="full-bar-git"></div>
+          </div>
+
+          <i class="fab fa-linux fa-2x fa-white"></i>
+          <p>Linux/bash</p>
+          <div class="bar-grid">
+            <div class="empty-bar"></div>
+            <div class="full-bar" id="full-bar-linux"></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- PORTFOLIO -->
+  <div class="section portfolio" id="portfolio">
+    <div class="portfolio-container">
+      <h2>Personal projects</h2>
+      <div class="portfolio-card-container">
+
+        <div class="portfolio-card">
+          <img src="img/wordcloud.png" alt="channel word cloud thumbnail">
+          <div class="portfolio-card-text-container">
+            <h5>Tube Channel Word Cloud</h5>
+            <p>Word cloud generated from a YouTube channel's video titles</p>
+            <p>VueJS, PostgreSQL, NodeJS</p>
+          </div>
+          <div class="portfolio-card-buttons-container">
+            <div class="portfolio-card-button">
+              <a href="https://tubewordcloud.herokuapp.com/" target="_blank">
+                <i class="fas fa-external-link-alt fa-2x"></i></a>
+            </div>
+            <div class="portfolio-card-button">
+              <a href="https://github.com/Robb1010/channelwordcloud" target="_blank">
+                <i class="fas fa-code fa-2x"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card">
+          <img src="img/rialto.png" alt="channel word cloud thumbnail">
+          <div class="portfolio-card-text-container">
+            <h5>Rialto Bridge Cafe</h5>
+            <p>Website for Rialto Bridge Cafe - Client work</p>
+            <p>Wix for the website, Ecwid for the shop interface, integration with Clover point of sale terminals</p>
+          </div>
+          <div class="portfolio-card-buttons-container">
+            <div class="portfolio-card-button">
+              <a href="https://www.rialtobridgecafe.com/" target="_blank">
+                <i class="fas fa-external-link-alt fa-2x"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2>College projects</h2>
+      <div class="portfolio-card-container">
+
+        <div class="portfolio-card">
+          <img src="img/bonvoyage.png" alt="channel word cloud thumbnail">
+          <div class="portfolio-card-text-container">
+            <h5>Bon Voyage</h5>
+            <p>Group project for creating a CRUD web app for a travel agency</p>
+            <p>HTML, CSS, Javascript, jQuery, nodeJS</p>
+          </div>
+          <div class="portfolio-card-buttons-container">
+            <div class="portfolio-card-button">
+              <a href="https://bonvoyagewebdevca.herokuapp.com/" target="_blank">
+                <i class="fas fa-external-link-alt fa-2x"></i></a>
+            </div>
+            <div class="portfolio-card-button">
+              <a href="https://github.com/robertsoldan/webappdevca" target="_blank">
+                <i class="fas fa-code fa-2x"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card">
+          <img src="img/cardiuil.png" alt="channel word cloud thumbnail">
+          <div class="portfolio-card-text-container">
+            <h5>Cardiuil</h5>
+            <p>Group project for creating a CRUD carpooling Java app</p>
+            <p>Java, PostgreSQL</p>
+          </div>
+          <div class="portfolio-card-buttons-container">
+            <div class="portfolio-card-button">
+              <a href="https://github.com/robertsoldan/carpoolapp" target="_blank">
+                <i class="fas fa-code fa-2x"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <h2>Free Code Camp front end projects</h2>
+      <div class="portfolio-card-container">
+
+        <div class="portfolio-card">
+          <img src="img/gameoflife.png" alt="game of life website thumbnail">
+          <div class="portfolio-card-text-container">
+            <h5>Game of life</h5>
+            <p>Game of life front end project</p>
+            <p>Javascript, ReactJS</p>
+          </div>
+          <div class="portfolio-card-buttons-container">
+            <div class="portfolio-card-button">
+              <a href="https://robb1010.github.io/gameoflife/" target="_blank">
+                <i class="fas fa-external-link-alt fa-2x"></i></a>
+            </div>
+            <div class="portfolio-card-button">
+              <a href="https://github.com/Robb1010/gameoflife" target="_blank">
+                <i class="fas fa-code fa-2x"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card">
+          <img src="img/calculator.png" alt="channel word cloud thumbnail">
+          <div class="portfolio-card-text-container">
+            <h5>Calculator</h5>
+            <p>Full screen front end calculator</p>
+            <p>HTML, CSS, Javascript</p>
+          </div>
+          <div class="portfolio-card-buttons-container">
+            <div class="portfolio-card-button">
+              <a href="https://robb1010.github.io/calculator/" target="_blank">
+                <i class="fas fa-external-link-alt fa-2x"></i></a>
+            </div>
+            <div class="portfolio-card-button">
+              <a href="https://github.com/Robb1010/calculator" target="_blank">
+                <i class="fas fa-code fa-2x"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card">
+          <img src="img/markdown.png" alt="markdown thumbnail">
+          <div class="portfolio-card-text-container">
+            <h5>Markdown editor</h5>
+            <p>Github - like markdown editor</p>
+            <p>Javascript, ReactJS</p>
+          </div>
+          <div class="portfolio-card-buttons-container">
+            <div class="portfolio-card-button">
+              <a href="https://robb1010.github.io/Markdown/" target="_blank">
+                <i class="fas fa-external-link-alt fa-2x"></i></a>
+            </div>
+            <div class="portfolio-card-button">
+              <a href="https://github.com/Robb1010/Markdown" target="_blank">
+                <i class="fas fa-code fa-2x"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card">
+          <img src="img/tictactoe.png" alt="tic tac toe thumbnail">
+          <div class="portfolio-card-text-container">
+            <h5>Tic tac toe</h5>
+            <p>Basic tic tac toe game</p>
+            <p>HTML, CSS, Javascript</p>
+          </div>
+          <div class="portfolio-card-buttons-container">
+            <div class="portfolio-card-button">
+              <a href="https://robb1010.github.io/tictactoe/" target="_blank">
+                <i class="fas fa-external-link-alt fa-2x"></i></a>
+            </div>
+            <div class="portfolio-card-button">
+              <a href="https://github.com/Robb1010/tictactoe" target="_blank">
+                <i class="fas fa-code fa-2x"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card">
+          <img src="img/simonsays.png" alt="simon says thumbnail">
+          <div class="portfolio-card-text-container">
+            <h5>Simon says</h5>
+            <p>Basic Simon Says game</p>
+            <p>HTML, CSS, Javascript</p>
+          </div>
+          <div class="portfolio-card-buttons-container">
+            <div class="portfolio-card-button">
+              <a href="https://robb1010.github.io/tiles/" target="_blank">
+                <i class="fas fa-external-link-alt fa-2x"></i></a>
+            </div>
+            <div class="portfolio-card-button">
+              <a href="https://github.com/Robb1010/tiles" target="_blank">
+                <i class="fas fa-code fa-2x"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+  </div>
+
+  <div class="section contact" id="contact">
+    <div class="contact-container">
+      <h2>Email me at <i class="fas fa-envelope"></i><a href = "mailto: contact@robertsoldan.com"> contact@robertsoldan.com</a></h2>
+      <h2>Find me on github at
+        <a href="https://github.com/robb1010" target="_blank"> <i class="fab fa-github "></i> robb1010
+          </a> and <a href="https://github.com/robertsoldan" target="_blank">
+            <i class="fab fa-github"></i> robertsoldan
+          </a></h2>
+      <h2><a href="https://www.linkedin.com/in/robertsoldan/" target="_blank"><i class="fab fa-linkedin"></i> Linkedin </a></h2>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2020 Robert Soldan</p>  
+  </div>
+</body>
+<script src="script.js"></script>
+
+</html>
