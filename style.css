@@ -244,6 +244,10 @@ body {
     margin-bottom: 40px;
 }
 
+.imgcontainer {
+    max-height: 150px;
+}
+
 img, .portfolio-card {
     border-style: solid;
     border-width: 0px;
@@ -256,8 +260,8 @@ img {
     border-bottom-style: solid;
     border-bottom-color: coral;
     border-bottom-width: 3px;
-    min-height: 150px;
-    max-height: 150px;
+    object-fit: cover;
+    height: 100%;
     box-shadow: 1px 1px 1px 1px grey;
 }
 
